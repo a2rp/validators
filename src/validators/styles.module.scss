@@ -1,0 +1,65 @@
+*,
+::before,
+::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 12px;
+}
+
+.container {
+    border: 1px solid #f00;
+    width: 100%;
+    max-width: 1400px;
+    padding: 30px;
+
+    .heading {
+        font-size: 32px;
+        font-weight: 900;
+    }
+
+    .validatorsContainer {
+        margin-top: 50px;
+    }
+
+    .inputContainer {
+        margin-top: 30px;
+
+        .inputValue {
+            width: 100%;
+        }
+
+        .info {
+            margin-top: 15px;
+            color: green;
+            font-weight: 900;
+        }
+    }
+
+    .samples {
+        margin-top: 30px;
+        width: 100%;
+
+        .sampleHeading {
+            font-weight: 900;
+        }
+
+        ul.sampleList {
+            list-style-type: none;
+            text-align: center;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 5px;
+
+            li {
+                border: 1px solid #000;
+                // background-color: aliceblue;
+                padding: 5px;
+                word-wrap: break-word;
+                white-space: nowrap;
+                font-size: 10px;
+            }
+        }
+    }
+}
