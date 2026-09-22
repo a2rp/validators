@@ -1,109 +1,165 @@
+# Validators
 
-![image](https://github.com/a2rp/validators/assets/5670738/3dbe8027-73c9-46f0-86d5-3db1d586e4e9)
+A modern browser-based string validation toolkit built with React, Vite, and validator.js.
 
+Validators provides a searchable collection of common validation utilities with instant feedback, practical examples, and a responsive interface.
 
-# Getting Started with Create React App
+![Validators](screenshot.png)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Live Demo
 
-## Available Scripts
+https://a2rp.github.io/validators/
 
-In the project directory, you can run:
+## Features
 
-### `npm start`
+- 34 string validators
+- Searchable validator library
+- Live validation feedback
+- Neutral, valid, and invalid result states
+- Ready-to-use examples
+- Responsive desktop, tablet, and mobile layout
+- Keyboard-friendly controls
+- Accessible validation feedback
+- Fixed responsive header
+- Mobile navigation
+- Back-to-top control
+- Dark monochromatic interface
+- Client-side validation with no backend required
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Validators
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+The toolkit includes validators for:
 
-### `npm test`
+- Alpha and alphanumeric strings
+- ASCII and Base32
+- Credit cards and EAN codes
+- Email addresses
+- Floating-point numbers and integers
+- Fully qualified domain names
+- Freight container IDs
+- Hexadecimal values and colors
+- HSL and RGB colors
+- IBAN and IMEI numbers
+- IP and MAC addresses
+- ISBN numbers
+- JSON and JWT values
+- Latitude and longitude coordinates
+- MD5 hashes
+- MIME types
+- Mobile phone numbers
+- Numeric and octal values
+- Port numbers
+- Slugs
+- Strong passwords
+- URLs
+- UUIDs
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Tech Stack
 
-### `npm run build`
+- React
+- Vite
+- JavaScript
+- SCSS Modules
+- validator.js
+- React Icons
+- ESLint
+- GitHub Pages
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Project Structure
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+```text
+validators
+├── public
+│   ├── favicon.ico
+│   ├── logo.png
+│   └── preview.png
+├── src
+│   ├── components
+│   │   ├── backToTop
+│   │   ├── footer
+│   │   ├── header
+│   │   ├── validatorInput
+│   │   ├── validatorList
+│   │   ├── validatorResult
+│   │   └── validatorTool
+│   ├── data
+│   │   └── validators.js
+│   ├── utils
+│   │   └── validateValue.js
+│   ├── App.jsx
+│   ├── App.module.scss
+│   ├── index.css
+│   └── main.jsx
+├── eslint.config.js
+├── index.html
+├── LICENSE
+├── package.json
+├── README.md
+└── vite.config.js
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Run Locally
 
-### `npm run eject`
+Clone the repository and install the dependencies:
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+```bash
+git clone https://github.com/a2rp/validators.git
+cd validators
+npm install
+```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Start the development server:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+```bash
+npm run dev
+```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Create a production build:
 
-## Learn More
+```bash
+npm run build
+```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Run lint checks:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+```bash
+npm run lint
+```
 
-### Code Splitting
+## Deployment
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+The project is configured for GitHub Pages.
 
-### Analyzing the Bundle Size
+Deploy the production build with:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+```bash
+npm run deploy
+```
 
-### Making a Progressive Web App
+## Accessibility
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+The interface includes semantic controls, keyboard navigation, visible focus states, accessible labels, responsive navigation, and live validation feedback using ARIA attributes.
 
-### Advanced Configuration
+## Future Prospects
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+Possible future additions include validator categories, validation options, input history, copied result feedback, and additional validator.js utilities.
 
-### Deployment
+## License
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+This project is licensed under the MIT License.
 
 ## Links
 
-- Portfolio: [https://www.ashishranjan.net](https://www.ashishranjan.net)
-- GitHub: [https://github.com/a2rp](https://github.com/a2rp)
-- CodePen: [https://codepen.io/ash1198](https://codepen.io/ash1198)
-- LinkedIn: [https://www.linkedin.com/in/aashishranjan](https://www.linkedin.com/in/aashishranjan)
-- Facebook: [https://www.facebook.com/theash.ashish/](https://www.facebook.com/theash.ashish/)
-- YouTube: [https://www.youtube.com/@ashishranjan-ashz?sub_confirmation=1](https://www.youtube.com/@ashishranjan-ashz?sub_confirmation=1)
-- Email: [ash.ranjan09@gmail.com](mailto:ash.ranjan09@gmail.com)
+- Portfolio: https://www.ashishranjan.net
+- GitHub: https://github.com/a2rp
+- CodePen: https://codepen.io/ash1198
+- LinkedIn: https://www.linkedin.com/in/aashishranjan
+- Facebook: https://www.facebook.com/theash.ashish
+- YouTube: https://www.youtube.com/channel/UCLHIBQeFQIxmRveVAjLvlbQ
+- Email: mailto:ash.ranjan09@gmail.com
 
 ## Support
 
-- Support: [https://a2rp-donation-page.netlify.app/](https://a2rp-donation-page.netlify.app/)
-- Buy Me A Coffee: [https://buymeacoffee.com/a2rp](https://buymeacoffee.com/a2rp)
-- Patreon: [https://patreon.com/a2rp](https://patreon.com/a2rp)
-<!-- Project links -->
-
-## Links
-
-- Live: [https://a2rp.github.io/validators/](https://a2rp.github.io/validators/)
-- Repository: [https://github.com/a2rp/validators](https://github.com/a2rp/validators)
-- Portfolio: [https://www.ashishranjan.net/](https://www.ashishranjan.net/)
-- GitHub: [https://github.com/a2rp](https://github.com/a2rp)
-- CodePen: [https://codepen.io/ash1198](https://codepen.io/ash1198)
-- LinkedIn: [https://www.linkedin.com/in/aashishranjan](https://www.linkedin.com/in/aashishranjan)
-- Facebook: [https://www.facebook.com/theash.ashish/](https://www.facebook.com/theash.ashish/)
-- YouTube: [https://www.youtube.com/@ashishranjan-ashz?sub_confirmation=1](https://www.youtube.com/@ashishranjan-ashz?sub_confirmation=1)
-- Email: [ash.ranjan09@gmail.com](mailto:ash.ranjan09@gmail.com)
-
-## Support
-
-- Support: [https://a2rp-donation-page.netlify.app/](https://a2rp-donation-page.netlify.app/)
-- Buy Me a Coffee: [https://buymeacoffee.com/a2rp](https://buymeacoffee.com/a2rp)
-- Patreon: [https://www.patreon.com/a2rp](https://www.patreon.com/a2rp)
+- Support: https://a2rp-donation-page.netlify.app/
+- Buy Me a Coffee: https://buymeacoffee.com/a2rp
+- Patreon: https://www.patreon.com/a2rp

@@ -1,0 +1,148 @@
+.section {
+    width: 100%;
+
+    padding: 70px 0 100px;
+
+    background: var(--background, #000000);
+
+    scroll-margin-top: 90px;
+}
+
+.container {
+    width: min(1180px, calc(100% - 40px));
+
+    margin: 0 auto;
+}
+
+.heading {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    gap: 40px;
+
+    margin-bottom: 28px;
+}
+
+.label {
+    display: inline-flex;
+    align-items: center;
+    gap: 7px;
+
+    margin-bottom: 8px;
+
+    color: var(--accent, #fe4500);
+
+    font-size: 0.63rem;
+    font-weight: 800;
+    letter-spacing: 0.11em;
+    text-transform: uppercase;
+
+    svg {
+        width: 13px;
+        height: 13px;
+    }
+}
+
+.title {
+    margin: 0;
+
+    color: var(--text, #f0f0f0);
+
+    font-size: clamp(2.2rem, 6vw, 4.8rem);
+    font-weight: 850;
+    letter-spacing: -0.055em;
+    line-height: 0.98;
+}
+
+.text {
+    max-width: 620px;
+
+    margin: 14px 0 0;
+
+    color: var(--text-muted, #858585);
+
+    font-size: 0.8rem;
+    line-height: 1.75;
+}
+
+.stat {
+    display: flex;
+    align-items: center;
+    gap: 11px;
+
+    flex-shrink: 0;
+
+    padding: 12px 14px;
+
+    background: var(--surface, #080808);
+
+    border: 1px solid var(--border, #292929);
+    border-radius: 11px;
+
+    svg {
+        width: 18px;
+        height: 18px;
+
+        color: var(--accent, #fe4500);
+    }
+
+    strong {
+        display: block;
+
+        color: var(--text, #eeeeee);
+
+        font-size: 1rem;
+        line-height: 1;
+    }
+
+    span {
+        display: block;
+
+        margin-top: 3px;
+
+        color: var(--text-subtle, #646464);
+
+        font-size: 0.58rem;
+        font-weight: 700;
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+    }
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: minmax(280px, 0.8fr) minmax(0, 1.55fr);
+    gap: 14px;
+    align-items: start;
+}
+
+.validationArea {
+    display: grid;
+    gap: 14px;
+}
+
+@media (max-width: 780px) {
+    .section {
+        padding: 60px 0 80px;
+    }
+
+    .container {
+        width: calc(100% - 28px);
+    }
+
+    .heading {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 18px;
+    }
+
+    .grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 520px) {
+    .title {
+        font-size: clamp(2.1rem, 13vw, 3.6rem);
+    }
+}
